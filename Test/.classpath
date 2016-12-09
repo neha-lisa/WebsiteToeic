@@ -13,5 +13,24 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/Java-lib/Java lib/mysql-connector-java-5.1.23-bin.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/Java-lib/Java lib/mysql-connector-java-5.1.27.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/Java-lib/Java lib/mysql-connector-java-5.1.40-bin.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/Java-lib/Java lib/taglibs-standard-impl-1.2.5.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/Java-lib/Java lib/taglibs-standard-spec-1.2.5.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/lib/activation.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/lib/commons.io_2.0.1.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/lib/commons-fileupload-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/lib/javax.servlet.jsp.jstl-1.2.4.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/lib/javax.servlet.jsp.jstl-api-1.2.1.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/lib/mail.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/lib/mysql-connector-java-6.0.4.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/lib/Java Mail/Java Mail/dsn.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/lib/Java Mail/Java Mail/imap.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/lib/Java Mail/Java Mail/mailapi.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/lib/Java Mail/Java Mail/pop3.jar"/>
+	<classpathentry kind="lib" path="E:/tailieu/Lập trình web/lib/Java Mail/Java Mail/smtp.jar"/>
+	<classpathentry kind="lib" path="D:/apache Tomcat/apache-tomcat-9.0.0.M11/apache-tomcat-9.0.0.M11/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="D:/apache Tomcat/apache-tomcat-9.0.0.M11/apache-tomcat-9.0.0.M11/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
