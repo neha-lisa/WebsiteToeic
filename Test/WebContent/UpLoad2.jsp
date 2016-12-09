@@ -376,9 +376,10 @@ tr:nth-child(even) {
 													url="jdbc:mysql://localhost/laptrinhweb" user="root" password="Thief1996"/>
 													<sql:query dataSource="${con}" var="result">
 														select *
-														from account,file_share
-														where account.username=file_share.username_account
-														and file_share.username_account='${sessionScope['loginUser']}'
+                                                        from account inner join file_share 
+                                                        on account.username=file_share.username_account
+                                                        where file_share.username_account='${sessionScope['loginUser']}'
+                                                        or file_share.share='1' 
 													</sql:query>
 													<form method="get" action="DownloadFile">
 													<c:forEach var="rows" items="${result.rows }">

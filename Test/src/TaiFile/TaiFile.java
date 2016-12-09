@@ -85,8 +85,8 @@ public class TaiFile extends HttpServlet {
             conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
  
             // constructs SQL statement
-            String sql = "INSERT INTO file_share (ten_file, file, ghichu, username_account) "
-            		+ "values (?, ?, ?, ?)";
+            String sql = "INSERT INTO file_share (ten_file, file, ghichu, username_account, share) "
+            		+ "values (?, ?, ?, ?, '0')";
             PreparedStatement statement = conn.prepareStatement(sql);
 
             statement.setString(1, fileName);

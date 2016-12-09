@@ -215,7 +215,7 @@ body
 						<div class="panel panel-info">
 							<div class="panel-heading">
 								<h3 class="panel-title">
-									<strong>Kênh hỗ trợ luyện thi TOEIC online</strong>
+									<strong>Upload</strong>
 								</h3>
 							</div>
 							<div class="panel-body">
