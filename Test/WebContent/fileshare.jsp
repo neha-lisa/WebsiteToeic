@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Bootstrap Example</title>
+<title>Bootstrap Case</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -17,7 +17,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <head>
-<title>Bootstrap Case</title>
+<title>Bootstrap Example</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -35,6 +35,10 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 <style type="text/css">
+p.groove {
+	border-style: groove;
+}
+
 <
 body
 >
@@ -102,6 +106,7 @@ color
 body
 >
 </style>
+
 <style>
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -126,8 +131,8 @@ button {
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-	width: 20%;
-	padding: 5px 9px;
+	width: auto;
+	padding: 10px 18px;
 	background-color: #f44336;
 }
 
@@ -228,32 +233,43 @@ to {
 		width: 40%;
 	}
 }
+</style>
+<style>
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
 
-.cancelbtn {
-	width: auto;
-	padding: 10px 18px;
-	background-color: #f44336;
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
 }
 </style>
-<title>Listening</title>
+<title>Quản Lý Upload</title>
 </head>
 <body>
-
 	<div class="container">
 
 		<div class="well well-lg">
 
-			<div id="navbar" class="navbar-collapse collapse">
 
+			<div id="navbar" class="navbar-collapse collapse">
 				<div class="col-md-8">
 					<div class="container">
 						<div class="media">
-							<img src="Image/MsHoa.jpg">
+							<img src="Image/logo.jpg">
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					</ul>
+
 					<ul class="nav navbar-nav navbar-right">
 						<a
 							href="Personalinfo.jsp?username=<c:out value="${sessionScope['loginUser']}" />">
@@ -262,18 +278,13 @@ to {
 
 						<a href="Login.jsp">Đăng Xuất</a>
 					</ul>
-
-				</div>
-				<div class="navbar-collapse collapse">
-					<form class="navbar-form navbar-right">
-
+					<div class="navbar-collapse collapse">
 						<form class="navbar-form navbar-right">
-							<div class="form-group">
-								<input type="seach" placeholder="seach" class="form-control">
-							</div>
-							<a href="Reading1.jsp" class="btn btn-info" role="button">Search</a>
-						</form>
+					</div>
+
+
 				</div>
+				<div class="navbar-collapse collapse"></div>
 				<!--/.navbar-collapse -->
 			</div>
 
@@ -310,15 +321,8 @@ to {
 									</ul>
 							</ul>
 						</div>
-
-
-					</nav>
 				</div>
 			</div>
-
-
-
-
 
 			<div id="Main">
 				<div class="row">
@@ -348,149 +352,88 @@ to {
 						<!--quang cao-->
 
 					</div>
+					<!--end cột trái-->
 
-
-					<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
-					<script type="text/javascript" src="bootstrap.min.js"></script>
-</body>
-
-<div align="justify" class="col-md-9">
-
-	<div class="panel-body"></div>
-
-	<div class="well">
-
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<div class="container">
-					<form>
-						<p align="left">Select the name of the song in the audio
-							later:</p>
-						<br>
-						<p align="left">
-							1.
-							<audio controls>
-								<source src="One Call Away.ogg" type="audio/ogg">
-								<source src="audio/One Call Away.mp3" type="audio/mpeg">
-							</audio>
-						</p>
-
-						<input type="radio" name="gender" value="male" checked>A.
-						One Call Away<br> <input type="radio" name="gender"
-							value="female">B. Marry You<br> <input type="radio"
-							name="gender" value="other">C. We don't talk any more<br>
-						<input type="radio" name="gender" value="other">D. See you
-						again<br>
-					</form>
-					<br>
-					<form>
-						<p align="left">
-							2.
-							<audio controls>
-								<source src="BlankSpace.ogg" type="audio/ogg">
-								<source src="audio/BlankSpace.mp3" type="audio/mpeg">
-							</audio>
-						</p>
-						<input type="radio" name="gender" value="male" checked>A.
-						Blank Space<br> <input type="radio" name="gender"
-							value="female">B. Perfect IIIusion<br> <input
-							type="radio" name="gender" value="other">C. Do You Wanna
-						Come Over?<br> <input type="radio" name="gender"
-							value="other">D. Prudent<br>
-					</form>
-					<br>
-					<form>
-						<p align="left">
-							3.
-							<audio controls>
-								<source src="Closer.ogg" type="audio/ogg">
-								<source src="audio/Closer.mp3" type="audio/mpeg">
-							</audio>
-						</p>
-						<input type="radio" name="gender" value="male" checked>A.
-						Face To Face<br> <input type="radio" name="gender"
-							value="female">B. Closer<br> <input type="radio"
-							name="gender" value="other">C. Prudent<br> <input
-							type="radio" name="gender" value="other">D. One Call Away<br>
-					</form>
-					<br>
-					<form>
-						<p align="left">
-							4.
-							<audio controls>
-								<source src="WeDontTalkAnymore.ogg" type="audio/ogg">
-								<source src="audio/WeDontTalkAnymore.mp3" type="audio/mpeg">
-							</audio>
-						</p>
-						<input type="radio" name="gender" value="male" checked>A.
-						CLoser<br> <input type="radio" name="gender" value="female">B.
-						One Call Away<br> <input type="radio" name="gender"
-							value="other">C. We Dont Talk Anymore<br> <input
-							type="radio" name="gender" value="other">D. Baby<br>
-					</form>
-					<br>
-
-
-					<body>
-						<div id="navbar" class="navbar-collapse collapse">
-
-							<div class="col-md-4">
-								</ul>
-
-								<ul class="nav navbar-nav navbar-right">
-									<button
-										onclick="document.getElementById('id01').style.display='block'"
-										style="width: auto;">Submit</button>
-									<div id="id01" class="modal">
-
-										<form class="modal-content animate" action="action_page.php">
-
-											<div class="container">
-												<div class="imgcontainer">
-													<span
-														onclick="document.getElementById('id02').style.display='none'"
-														class="close" title="Close Modal">&times;</span>
-												</div>
-											</div>
-
-											<div class="container">
-												<h1>Score</h1>
-												<label><b>Tổng Điểm</b></label> <br> <input type="text"
-													placeholder="75/100" name="uname" required> <br>
-												<label><b>Số Câu Đúng</b></label> <br> <input
-													type="text" placeholder="3/4" name="uname" required>
-												<br>
-
-											</div>
-											<div class="container" style="background-color:">
-												<a href="Listening.jsp" class="btn btn-info" role="button">Again</a>
-												<a href="Listening.jsp" class="btn btn-info" role="button">Next</a>
-
-											</div>
-									</div>
-
-									</form>
+					<!--cột giữa-->
+					<div class="col-md-10">
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h3 class="panel-title">Quản lý tập tin</h3>
 							</div>
+							<div class="panel-body">
+								<table>
+									<thead>
+										<tr>
+											<th>Người Đăng</th>
+											<th>File</th>
+											<th>Ghi Chú</th>
+										</tr>
+									</thead>
+									<tbody>
+										<sql:setDataSource var="con" driver="com.mysql.jdbc.Driver" 
+													url="jdbc:mysql://localhost/laptrinhweb" user="root" password="Thief1996"/>
+													<sql:query dataSource="${con}" var="result">
+														select *
+                                                        from account inner join file_share 
+                                                        on account.username=file_share.username_account
+                                                        where file_share.share='1' 
+                                                        and file_share.username_account !='${sessionScope['loginUser']}'                                                          
+                                                        
+													</sql:query>
+													<form method="get" action="DownloadFile">
+													<c:forEach var="rows" items="${result.rows }">
+														<tr>
+															<td>${rows.fullname }</td>
+															<td><button type="submit" value="${rows.ID_file_share}" name="id"  class="btn btn-link">${rows.ten_file }</button></td>
+															<td>${rows.ghichu }</td>
+														</tr>
+													</c:forEach>
+													</form>
+									</tbody>
+
+								</table>
+
+							</div>
+							<!--end cột trái-->
+
+							<!--cot phải-->
+
+							<!--end cot phải-->
 						</div>
+						<div class="row">
+							<div class="col-md-offset-4">
+								<!-- <button type="submit" id="guibai" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">
+                          Gửi Bài
+                        </button> -->
+								<br>
+								<br>
+
+
+
+							</div>
+
+						</div>
+					</div>
 				</div>
+
 			</div>
+			<!--end cột giữa-->
 		</div>
+		<!--endrow chinh-->
 	</div>
-</div>
-</div>
-</div>
-</div>
 </body>
 <footer>
-	<div class="well well-lg">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="text">
-					<h6>Copyright © 2013, Trung Tâm Luyện Thi Toeic</h6>
-					<h6>Địa chỉ: 69 Võ Văn Ngân, Phường Linh Chiểu, Quận Thủ Đức,
-						Thành phố Hồ Chí Minh.</h6>
-					<h6>Điện thoại: (+84 - 8) 38968641 - (+84 - 8) 38961333</h6>
-					<h6>E-mail: TrungTamToeic@gmail.com</h6>
+	<div class="container">
+		<div class="well well-lg">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="text">
+						<h6>Copyright © 2013, Trung Tâm Luyện Thi Toeic</h6>
+						<h6>Địa chỉ: 69 Võ Văn Ngân, Phường Linh Chiểu, Quận Thủ Đức,
+							Thành phố Hồ Chí Minh.</h6>
+						<h6>Điện thoại: (+84 - 8) 38968641 - (+84 - 8) 38961333</h6>
+						<h6>E-mail: TrungTamToeic@gmail.com</h6>
+					</div>
 				</div>
 			</div>
 		</div>
