@@ -369,6 +369,7 @@ tr:nth-child(even) {
 											<th>Người Đăng</th>
 											<th>File</th>
 											<th>Ghi Chú</th>
+											<th>Chi Tiết</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -379,7 +380,7 @@ tr:nth-child(even) {
                                                         from account inner join file_share 
                                                         on account.username=file_share.username_account
                                                         where file_share.username_account='${sessionScope['loginUser']}'
-                                                        or file_share.share='1' 
+                                                        
 													</sql:query>
 													<form method="get" action="DownloadFile">
 													<c:forEach var="rows" items="${result.rows }">
@@ -387,6 +388,7 @@ tr:nth-child(even) {
 															<td>${rows.fullname }</td>
 															<td><button type="submit" value="${rows.ID_file_share}" name="id"  class="btn btn-link">${rows.ten_file }</button></td>
 															<td>${rows.ghichu }</td>
+															<td><a href="Share.jsp">Xem</a></td>
 														</tr>
 													</c:forEach>
 													</form>
