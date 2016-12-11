@@ -180,36 +180,8 @@ body
 
 			<div id="Main">
 				<div class="row">
-					<!--cột trái-->
-					<div class="col-md-2">
-						<div class="panel panel-success">
-							<div class="panel-heading">
-								<h3 class="panel-title">
-									<strong>Topic </strong>
-								</h3>
-							</div>
-							<ul class="list-group">
-								<a href="#" class="list-group-item"><strong>Reading</strong></a>
-								<div class="container">
-									<a href="Reading.jsp">Reading 1</a><br> <a
-										href="Reading2.jsp">Reading 2</a><br> <a href="Test4.jsp">Reading
-										3</a><br>
-								</div>
-								<a href="Listening.jsp" class="list-group-item"><strong>Listening</strong></a>
-								<div class="container">
-									<a href="Listening.jsp">Listening 1</a><br> <a
-										href="Test.jsp">Listening 2</a><br>
-								</div>
-							</ul>
-						</div>
-
-						<!--quang cao-->
-
-					</div>
-					<!--end cột trái-->
-
-					<!--cột giữa-->
 					<div class="col-md-10">
+					  <div class="col-md-offset-1">
 						<div class="panel panel-info">
 							<div class="panel-heading">
 								<h3 class="panel-title">
@@ -234,8 +206,6 @@ body
 													name="ghichu" placeholder="Nhập ghi chú">
 											</div>
 										</div>
-
-
 										<div class="form-group">
 											<label class="col-md-3">File: </label>
 											<div class="col-md-7">
@@ -253,15 +223,10 @@ body
 								</div>
 
 							</div>
-							<!--end panel-->
-							<!--end panel-->
 						</div>
-						<!--end cột giữa-->
-
-
-
+						</div>
 					</div>
-					<!--endrow chinh-->
+					
 				</div>
 			</div>
 		</div>

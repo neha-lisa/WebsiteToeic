@@ -19,12 +19,11 @@
 
 		<s:update dataSource="${ds}" var="count">
         update account
-        set fullname=?, email=?, mobile=?, quyen=?, khoa=?
+        set fullname=?, email=?, mobile=?, khoa=?
         where id='${param.id}'
         <s:param value="${param.fullname }"></s:param>
         <s:param value="${param.email }"></s:param>
         <s:param value="${param.mobile }"></s:param>
-        <s:param value="${param.quyen }"></s:param>
         <s:param value="${param.khoa }"></s:param>
         
       </s:update>

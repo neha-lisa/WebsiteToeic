@@ -152,8 +152,8 @@ body
 					</div>
 					<div class="navbar-collapse collapse" id="main-menu">
 						<ul class="nav nav-justified ">
-						<li><a class="textcolor" style="color: black"
-									href="HomeSauDangNhap.jsp"><strong>Home</strong></a></li>							
+						        <li><a class="textcolor" style="color: black"
+									href="HomeSauDangNhap.jsp"><strong>Trang Chủ</strong></a></li>							
 								<li><a class="textcolor" style="color: black"
 									href="TaiFile.jsp"><strong>Up Load</strong></a></li>
 									<li class="dropdown"><a style="color: black"
@@ -170,6 +170,8 @@ body
 										<li><a href="Listening.jsp">Listening Test</a></li>
 										<li><a href="Test.jsp">Full Test</a></li>
 									</ul>
+								<li><a class="textcolor" style="color: black"
+									href="hotro.jsp"><strong>Hỗ Trợ</strong></a></li>	
 						</ul>
 					</div>
 				</div>
