@@ -150,16 +150,7 @@ tr:nth-child(even) {
 					</ul>
 
 				</div>
-				<div class="navbar-collapse collapse">
-					<form class="navbar-form navbar-right">
-
-						<form class="navbar-form navbar-right">
-							<div class="form-group">
-								<input type="seach" placeholder="seach" class="form-control">
-							</div>
-							<button type="submit" class="btn btn-success">Seach</button>
-						</form>
-				</div>
+	
 				<!--/.navbar-collapse -->
 			</div>
 
@@ -213,37 +204,50 @@ tr:nth-child(even) {
 							<div class="panel-body">
 								<!--cot trái-->
 								<div class="col-md-12">
+								<form action="chinhsuathongtin.jsp" method="post">
 									<s:setDataSource var="dbsource" driver="com.mysql.jdbc.Driver"
 										url="jdbc:mysql://localhost/laptrinhweb" user="root"
 										password="Thief1996" />
 									<s:query dataSource="${dbsource}" var="thongtin">
-								SELECT * from account
-								where account.username='${param.username}'				    
-						</s:query>
-									<form id="FormGuiBai" method="post" class="form-horizontal"
-										action="" role="form">
-										<c:forEach var="row" items="${thongtin.rows}">
+								        SELECT * from account
+								        where account.username='${param.username}'				    
+						           </s:query>
+									
+										
+										<c:forEach var="rows" items="${thongtin.rows}">
 											<div class="form-group">
 												<label class="col-sm-2">Full Name</label>
-												<div class="col-sm-10">${row.fullname}</div>
+												<input type="text" value="${rows.fullname }" name="fullname">
 											</div>
-											<div class="form-group"></div>
+											
 											<div class="form-group">
 												<label class="col-sm-2">User Name</label>
-												<div class="col-sm-10">${row.username}</div>
+												<input type="text" value="${rows.username }" name="username">
 											</div>
+											
+											<div class="form-group">
+												<label class="col-sm-2">Password</label>
+												<input type="password" value="${rows.password }" name="password">
+											</div>
+											
+											<div class="form-group">
+												<label class="col-sm-2">Confirm Password</label>
+												<input type="password" value="${rows.cpw }" name="cpw">
+											</div><br>
+											
 											<div class="form-group">
 												<label class="col-sm-2">Email</label>
-												<div class="col-sm-10">${row.email}</div>
+												<input type="text" value="${rows.email }" name="email">
 											</div>
-											<div class="form-group"></div>
+											
 											<div class="form-group">
 												<label class="col-sm-2">Mobile</label>
-												<div class="col-sm-10">${row.mobile}</div>
+												<input type="text" value="${rows.mobile }" name="mobile">
 											</div>
 										</c:forEach>
-									</form>
-
+									
+									<input type="submit" value="Sửa">
+                                   </form>
 
 								</div>
 
@@ -302,76 +306,8 @@ tr:nth-child(even) {
 											</div>
 										</div>
 									</div>
-									<!--Tạo lịch trình button-->
-									<button type="button" class="btn btn-info btn-lg"
-										data-toggle="modal" data-target="#myModal1">Tạo Lịch
-										Biểu</button>
-									<div class="modal fade" id="myModal1" role="dialog">
-										<div class="modal-dialog modal-lg">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">&times;</button>
-													<h4 class="modal-title">Lịch Biểu</h4>
-												</div>
-												<div class="modal-body">
-													<table>
-														<tr>
-															<th>Ngày</th>
-															<th>Công Việc</th>
-															<th>Thời Gian Thực Hiện</th>
-															<th>Thời Gian Thông Báo</th>
-														</tr>
-														<tr>
-															<td>18/10/2016</td>
-															<td>Báo Cáo</td>
-															<td>7:30</td>
-															<td>6:00</td>
-														</tr>
-														<tr>
-															<td>20/10/2016</td>
-															<td>Reading</td>
-															<td>20:00</td>
-															<td>19:00</td>
-														</tr>
-														<tr>
-															<td>21/10/2016</td>
-															<td>Training</td>
-															<td>9:00</td>
-															<td>8:00</td>
-														</tr>
-													</table>
-													<br>
-
-													<!--Button tạo-->
-													<button type="button" class="btn btn-info btn-lg"
-														data-toggle="modal" data-target="#myModal4">Tạo</button>
-													<div class="modal fade" id="myModal4" role="dialog">
-														<div class="modal-dialog modal-sm">
-															<div class="modal-content">
-																<div class="modal-header">
-																	<button type="button" class="close"
-																		data-dismiss="modal">&times;</button>
-																	<h4 class="modal-title">Thông Báo</h4>
-																</div>
-																<div class="modal-body">
-																	<p>Bạn đã tạo lịch biểu thành công</p>
-																</div>
-
-															</div>
-														</div>
-													</div>
-
-
-												</div>
-
-
-												<div class="modal-footer">
-													<button type="button" class="btn btn-default"
-														data-dismiss="modal">Close</button>
-												</div>
-											</div>
-										</div>
-									</div>
+									
+									
 
 								</div>
 
@@ -379,7 +315,7 @@ tr:nth-child(even) {
 								<br>
 
 
-								<!-- Modal -->
+								
 
 
 							</div>
