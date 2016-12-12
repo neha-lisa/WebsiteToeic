@@ -252,73 +252,7 @@ tr:nth-child(even) {
 								</div>
 
 							</div>
-							<div class="row">
-								<div class="container">
-									<!--Lịch Sử Thi Button-->
-									<button type="button" class="btn btn-info btn-lg"
-										data-toggle="modal" data-target="#myModal">Lịch Sử
-										Thi</button>
-									<div class="modal fade" id="myModal" role="dialog">
-										<div class="modal-dialog modal-lg">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal">&times;</button>
-													<h4 class="modal-title">Lịch Sử</h4>
-												</div>
-												<div class="modal-body">
-													< table>
-													<tr>
-														<th>Tên bài thi</th>
-														<th>Số lần thực hiện</th>
-														<th>Điểm lần thi gần nhất</th>
-														<th>Điểm cao nhất</th>
-													</tr>
-													<tr>
-														<td>Reading 1</td>
-														<td>5</td>
-														<td>80</td>
-														<td>100</td>
-													</tr>
-													<tr>
-														<td>Listening 1</td>
-														<td>3</td>
-														<td>90</td>
-														<td>90</td>
-													</tr>
-													<tr>
-														<td>Full Test</td>
-														<td>4</td>
-														<td>370</td>
-														<td>400</td>
-													</tr>
-													<tr>
-														<td>Skill Test</td>
-														<td>10</td>
-														<td>350</td>
-														<td>350</td>
-													</tr>
-													</table>
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-default"
-														data-dismiss="modal">Close</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
 
-								</div>
-
-								<br>
-								<br>
-
-
-								
-
-
-							</div>
 						</div>
 					</div>
 
