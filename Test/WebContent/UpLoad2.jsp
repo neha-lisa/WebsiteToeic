@@ -319,6 +319,8 @@ tr:nth-child(even) {
 										<li><a href="Listening.jsp">Listening Test</a></li>
 										<li><a href="Test.jsp">Full Test</a></li>
 									</ul>
+									<li><a class="textcolor" style="color: black"
+									href="hotro.jsp"><strong>Hỗ Trợ</strong></a></li>	
 							</ul>
 						</div>
 				</div>
@@ -333,6 +335,7 @@ tr:nth-child(even) {
 								<h3 class="panel-title">Quản lý tập tin</h3>
 							</div>
 							<div class="panel-body">
+							
 								<table>
 									<thead>
 										<tr>
@@ -352,16 +355,18 @@ tr:nth-child(even) {
                                                         where file_share.username_account='${sessionScope['loginUser']}'
                                                         
 													</sql:query>
-													<form method="get" action="DownloadFile">
-													<c:forEach var="rows" items="${result.rows }">
-														<tr>
-															<td>${rows.fullname }</td>
-															<td><button type="submit" value="${rows.ID_file_share}" name="id"  class="btn btn-link">${rows.ten_file }</button></td>
-															<td>${rows.ghichu }</td>
-															<td><a href="Share.jsp">Xem</a></td>
-														</tr>
-													</c:forEach>
-													</form>
+										
+                                          <c:forEach var="rows" items="${result.rows }">
+                                              <tr>
+                                                <td>${rows.fullname }</td>
+                                                <form method="get" action="Download">
+                                                <td><button type="submit" value="${rows.ID_file_share}" name="id"  class="btn btn-link">${rows.ten_file }</button></td>
+                                                </form>
+                                                <td>${rows.ghichu }</td>
+                                                <td><a href="Share.jsp">Xem</a></td>
+                                              </tr>
+											</c:forEach>
+										
 									</tbody>
 
 								</table>

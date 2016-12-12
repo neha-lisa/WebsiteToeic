@@ -201,6 +201,7 @@ body
 							                     <th>Mobile</th>
 							                     <th>Regdate</th>
 							                     <th>Active</th>
+							                     <th>Messenger</th>
 							                </tr>
 							          </thead>
 							          <tbody>
@@ -208,7 +209,8 @@ body
 													url="jdbc:mysql://localhost/laptrinhweb" user="root" password="Thief1996"/>
 													<sql:query dataSource="${con}" var="result">
 														select *
-														from account
+														from account inner join tinnhan
+														on account.username=tinnhan.username_tinnhan
 														where account.quyen!=0
 
 													</sql:query>
@@ -222,14 +224,34 @@ body
 															<td>${rows.mobile }</td>
 															<td>${rows.regdate }</td>
 															<td><a href="chitiettaikhoan.jsp?id=<c:out value="${rows.id }"/>">Chi tiết</a></td>
+															<td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Xem</button>
+																
+																  <!-- Modal -->
+																  <div class="modal fade" id="myModal" role="dialog">
+																    <div class="modal-dialog">
+																    
+																      <!-- Modal content-->
+																      <div class="modal-content">
+																        <div class="modal-header">
+																          <button type="button" class="close" data-dismiss="modal">&times;</button>
+																          <h4 class="modal-title">Tin Nhắn</h4>
+																        </div>
+																        <div class="modal-body">
+																          <p>${rows.noidung }</p>
+																        </div>
+																        <div class="modal-footer">
+																          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																        </div>
+																      </div>
+																      
+																    </div>
+																  </div></td>
+															
 														</tr>
-													</c:forEach>
-													
-													
-													
+													</c:forEach>		
 											</tbody>
-							   
 							     </table>
+							     
 							</div>
 							
 

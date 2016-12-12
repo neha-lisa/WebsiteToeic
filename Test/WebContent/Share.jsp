@@ -170,6 +170,8 @@ body
 										<li><a href="Listening.jsp">Listening Test</a></li>
 										<li><a href="Test.jsp">Full Test</a></li>
 									</ul>
+									<li><a class="textcolor" style="color: black"
+									href="hotro.jsp"><strong>Hỗ Trợ</strong></a></li>	
 						</ul>
 					</div>
 				</div>

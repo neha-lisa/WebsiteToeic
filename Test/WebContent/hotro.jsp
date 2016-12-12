@@ -171,6 +171,8 @@ body
 										<li><a href="Listening.jsp">Listening Test</a></li>
 										<li><a href="Test.jsp">Full Test</a></li>
 									</ul>
+								<li><a class="textcolor" style="color: black"
+									href="hotro.jsp"><strong>Hỗ Trợ</strong></a></li>	
 						</ul>
 					</div>
 				</div>
@@ -192,44 +194,36 @@ body
 							</div>
 							<div class="panel-body">
 							   <div class="row ">
-							           <div class="form-group">
-											<label class="col-md-3">Admin</label>
-											<div class="col-md-7">
-											<sql:setDataSource var="con" driver="com.mysql.jdbc.Driver" 
-													url="jdbc:mysql://localhost/laptrinhweb" user="root" password="Thief1996"/>
-													<sql:query dataSource="${con}" var="result">
+							   <form action="guitinnhan.jsp" method="post">
+							           <table class="table table-bordered table-hover">
+							              <thead>
+							              <sql:setDataSource var="con" driver="com.mysql.jdbc.Driver" 
+											 url="jdbc:mysql://localhost/laptrinhweb" user="root" password="Thief1996"/>
+												<sql:query dataSource="${con}" var="result">
 														select *
 														from tinnhan
 														where tinnhan.username_tinnhan='admin'
 
-													</sql:query>
+												</sql:query>
 										    <c:forEach var="rows" items="${result.rows }">
-											     <td>${rows.noidung }</td>
-											</c:forEach>
-											</div>
-								      </div>
-								      <div class="form-group">
-								              <lable class="col-md-10">${sessionScope['loginUser']}</lable>
-								              <div class="col-md-10">
-								                <div class="col-md-offset-4">
-											    <sql:setDataSource var="con" driver="com.mysql.jdbc.Driver" 
-													url="jdbc:mysql://localhost/laptrinhweb" user="root" password="Thief1996"/>
-													<sql:query dataSource="${con}" var="result">
-														select *
-														from tinnhan
-														where tinnhan.username_tinnhan='${sessionScope['loginUser']}'
-
-													</sql:query>
-										         <c:forEach var="rows" items="${result.rows }">
-											     
-											         <input type="text" value="${rows.noidung }" name="noidung">
-											     
-											     </c:forEach>
-											     </div>
-											  </div>
-								      </div><br>
-								      </div><br>
-								       <input type="submit" value="Gửi">
+							                  <tr>
+							                     <th>Admin</th>
+							                     <th>${rows.noidung }</th>
+							                     
+							                   </tr>
+							                </c:forEach>
+							              </thead>
+							              <tbody>
+							                       <tr>
+							                           <td><input type="text" value="${sessionScope['loginUser']}" name="tennguoigui"></td>
+							                           <td> <input type="text" value="" name="noidung"> </td>
+							                       </tr>
+							                    
+							              </tbody>
+							           </table>
+							           <div class="col-md-">
+							           <input type="submit" value="Gửi">
+							           </div>
 								</div>
 							</div>
 							

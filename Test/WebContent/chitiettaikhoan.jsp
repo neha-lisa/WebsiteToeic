@@ -201,6 +201,7 @@ body
 							                     <th>Last Access Time</th>
 							                     <th>Lock</th>
 							                     
+							                     
 							                </tr>
 							          </thead>
 							          <tbody>
@@ -234,6 +235,7 @@ body
 															<td>
 															    <input type="text" value="${rows.khoa }" name="khoa">
 															</td>
+															
 															
 														</tr>
 													</c:forEach>

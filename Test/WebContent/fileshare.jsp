@@ -319,6 +319,8 @@ tr:nth-child(even) {
 										<li><a href="Listening.jsp">Listening Test</a></li>
 										<li><a href="Test.jsp">Full Test</a></li>
 									</ul>
+							    <li><a class="textcolor" style="color: black"
+									href="hotro.jsp"><strong>Hỗ Trợ</strong></a></li>	
 							</ul>
 						</div>
 				</div>
@@ -353,11 +355,11 @@ tr:nth-child(even) {
                                                         and file_share.username_account !='${sessionScope['loginUser']}'                                                          
                                                         
 													</sql:query>
-													<form method="get" action="DownloadFile">
+													<form method="get" action="Download">
 													<c:forEach var="rows" items="${result.rows }">
 														<tr>
 															<td>${rows.fullname }</td>
-															<td><button type="submit" value="${rows.ID_file_share}" name="id"  class="btn btn-link">${rows.ten_file }</button></td>
+															<td><button type="submit" value="${rows.ID_file_share}" name="idfileshare"  class="btn btn-link">${rows.ten_file }</button></td>
 															<td>${rows.ghichu }</td>
 														</tr>
 													</c:forEach>
