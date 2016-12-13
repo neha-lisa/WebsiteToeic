@@ -239,19 +239,26 @@ span.psw {
               </div>
               <div class="navbar-collapse collapse" id="main-menu">
                 <ul class="nav nav-justified " >
-                    <li><a class="textcolor" style="color: white" href="HomeSauDangNhap.jsp"><strong>Home</strong></a></li>
-                    <li class="dropdown"><a style="color: white" class="dropdown-toggle" data-toggle="dropdown" href="#">Up Load<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="UpLoad.jsp">Đăng bài</a></li>
-                          <li><a href="UpLoad2.jsp">Những bài đã đăng </a></li>
-                        </ul>  
-                    <li><a class="textcolor" style="color: white" href="Share.jsp"><strong>Share</strong></a></li>
-                     <li class="dropdown"><a style="color: white" class="dropdown-toggle" data-toggle="dropdown" href="#">Test<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="Reading.jsp">Reading Test</a></li>
-                          <li><a href="Listening.jsp">Listening Test</a></li>
-                          <li><a href="Test.jsp">Full Test</a></li>
-                        </ul>   
+                    <li><a class="textcolor" style="color: black"
+									href="HomeSauDangNhap.jsp"><strong>Home</strong></a></li>							
+								<li><a class="textcolor" style="color: black"
+									href="TaiFile.jsp"><strong>Up Load</strong></a></li>
+									<li class="dropdown"><a style="color: black"
+									class="dropdown-toggle" data-toggle="dropdown" href="#">Tài Liệu<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="UpLoad2.jsp">Cá Nhân</a></li>
+										<li><a href="fileshare.jsp">Được Chia Sẻ </a></li>
+									</ul>
+								<li class="dropdown"><a style="color: black"
+									class="dropdown-toggle" data-toggle="dropdown" href="#">Test<span
+										class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="Reading.jsp">Reading Test</a></li>
+										<li><a href="Listening.jsp">Listening Test</a></li>
+										<li><a href="Test.jsp">Full Test</a></li>
+									</ul>
+									<li><a class="textcolor" style="color: black"
+									href="hotro.jsp"><strong>Hỗ Trợ</strong></a></li>	
                        
                 </ul>
               </div>

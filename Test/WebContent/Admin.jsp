@@ -111,9 +111,6 @@ body
 	<div class="container">
 
 		<div class="well well-lg">
-
-
-
 			<div id="navbar" class="navbar-collapse collapse">
 
 				<div class="col-md-8">
@@ -136,10 +133,6 @@ body
 
 				</div>
 			</div>
-			<!--/.navbar-collapse -->
-
-
-
 			<div class="row">
 				<div class="col-md-12">
 					<nav class="navbar navbar-default" style="background: #07E5F5;">
@@ -253,8 +246,6 @@ body
 							     </table>
 							     
 							</div>
-							
-
 						</div>
 
 					</div>
