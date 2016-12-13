@@ -268,18 +268,20 @@ tr:nth-child(even) {
 					</div>
 				</div>
 				<div class="col-md-4">
-					</ul>
+					
 
-					<ul class="nav navbar-nav navbar-right">
-						<a
-							href="Personalinfo.jsp?username=<c:out value="${sessionScope['loginUser']}" />">
-							<c:out value="${sessionScope['loginUser']}" />
-						</a>
-
-						<a href="Login.jsp">Đăng Xuất</a>
+						<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="Personalinfo.jsp?username=<c:out value="${sessionScope['loginUser']}" />">
+								<c:out value="${sessionScope['loginUser']}" />
+							</a>
+						</li>
+						<li>
+							<a href="Login.jsp">Đăng Xuất</a>
+						</li>
 					</ul>
 					<div class="navbar-collapse collapse">
-						<form class="navbar-form navbar-right">
+						<form class="navbar-form navbar-right"></form>
 					</div>
 
 
@@ -323,7 +325,9 @@ tr:nth-child(even) {
 									href="hotro.jsp"><strong>Hỗ Trợ</strong></a></li>	
 							</ul>
 						</div>
+						</nav>
 				</div>
+				
 			</div>
 
 			<div id="Main">
@@ -356,17 +360,16 @@ tr:nth-child(even) {
                                                         
 													</sql:query>
 										
-                                          <c:forEach var="rows" items="${result.rows }">
-                                              <tr>
-                                                <td>${rows.fullname }</td>
-                                                <form method="get" action="Download">
-                                                <td><button type="submit" value="${rows.ID_file_share}" name="id"  class="btn btn-link">${rows.ten_file }</button></td>
-                                                </form>
-                                                <td>${rows.ghichu }</td>
-                                                <td><a href="Share.jsp">Xem</a></td>
-                                              </tr>
-											</c:forEach>
-										
+										 <form method="get" action="ReadPDF">
+													<c:forEach var="rows" items="${result.rows }">
+														<tr>
+															<td>${rows.fullname }</td>
+															<td><button type="submit" value="${rows.ID_file_share}" name="idfileshare"  class="btn btn-link">${rows.ten_file }</button></td>
+															<td>${rows.ghichu }</td>
+															<td><a href="Share.jsp">Xem</a></td>
+														</tr>
+													</c:forEach>
+										</form>
 									</tbody>
 
 								</table>
@@ -398,6 +401,7 @@ tr:nth-child(even) {
 			<!--end cột giữa-->
 		</div>
 		<!--endrow chinh-->
+	</div>
 	</div>
 </body>
 <footer>

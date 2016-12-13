@@ -268,18 +268,21 @@ tr:nth-child(even) {
 					</div>
 				</div>
 				<div class="col-md-4">
-					</ul>
+					
 
 					<ul class="nav navbar-nav navbar-right">
-						<a
-							href="Personalinfo.jsp?username=<c:out value="${sessionScope['loginUser']}" />">
-							<c:out value="${sessionScope['loginUser']}" />
-						</a>
-
-						<a href="Login.jsp">Đăng Xuất</a>
+						<li>
+							<a href="Personalinfo.jsp?username=<c:out value="${sessionScope['loginUser']}" />">
+								<c:out value="${sessionScope['loginUser']}" />
+							</a>
+						</li>
+						<li>
+							<a href="Login.jsp">Đăng Xuất</a>
+						</li>
 					</ul>
 					<div class="navbar-collapse collapse">
 						<form class="navbar-form navbar-right">
+						</form>
 					</div>
 
 
@@ -323,6 +326,7 @@ tr:nth-child(even) {
 									href="hotro.jsp"><strong>Hỗ Trợ</strong></a></li>	
 							</ul>
 						</div>
+					</nav>
 				</div>
 			</div>
 
@@ -355,7 +359,7 @@ tr:nth-child(even) {
                                                         and file_share.username_account !='${sessionScope['loginUser']}'                                                          
                                                         
 													</sql:query>
-													<form method="get" action="Download">
+													<form method="get" action="ReadPDF">
 													<c:forEach var="rows" items="${result.rows }">
 														<tr>
 															<td>${rows.fullname }</td>
@@ -396,6 +400,7 @@ tr:nth-child(even) {
 		</div>
 		<!--endrow chinh-->
 	</div>
+</div>
 </body>
 <footer>
 	<div class="container">
