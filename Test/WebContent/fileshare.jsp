@@ -355,7 +355,7 @@ tr:nth-child(even) {
 														select *
                                                         from account inner join file_share 
                                                         on account.username=file_share.username_account
-                                                        where file_share.share='1' 
+                                                        where file_share.share='public' 
                                                         and file_share.username_account !='${sessionScope['loginUser']}'                                                          
                                                         
 													</sql:query>

@@ -86,7 +86,7 @@ public class TaiFile extends HttpServlet {
  
             // constructs SQL statement
             String sql = "INSERT INTO file_share (ten_file, file, ghichu, username_account, share) "
-            		+ "values (?, ?, ?, ?, '0')";
+            		+ "values (?, ?, ?, ?, 'private')";
             PreparedStatement statement = conn.prepareStatement(sql);
 
             statement.setString(1, fileName);
