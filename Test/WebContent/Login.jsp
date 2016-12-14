@@ -296,7 +296,7 @@ window.onclick = function(event) {
 						<div class="navbar-collapse collapse" id="main-menu">
 							<ul class="nav nav-justified ">
 								<li><a class="textcolor" style="color: black"
-									href="HomeSauDangNhap.jsp"><strong>Home</strong></a></li>							
+									href="index.jsp"><strong>Home</strong></a></li>							
 								<li><a class="textcolor" style="color: black"
 									href="TaiFile.jsp"><strong>Up Load</strong></a></li>
 									<li class="dropdown"><a style="color: black"
