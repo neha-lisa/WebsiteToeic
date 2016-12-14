@@ -314,14 +314,8 @@ tr:nth-child(even) {
 										<li><a href="UpLoad2.jsp">Cá Nhân</a></li>
 										<li><a href="fileshare.jsp">Được Chia Sẻ </a></li>
 									</ul>
-								<li class="dropdown"><a style="color: black"
-									class="dropdown-toggle" data-toggle="dropdown" href="#">Test<span
-										class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="Reading.jsp">Reading Test</a></li>
-										<li><a href="Listening.jsp">Listening Test</a></li>
-										<li><a href="Test.jsp">Full Test</a></li>
-									</ul>
+								<li><a class="textcolor" style="color: black"
+									href="Test.jsp"><strong>Test</strong></a></li>
 							    <li><a class="textcolor" style="color: black"
 									href="hotro.jsp"><strong>Hỗ Trợ</strong></a></li>	
 							</ul>

@@ -144,28 +144,7 @@ body
 								class="icon-bar"></span>
 						</button>
 					</div>
-					<div class="navbar-collapse collapse" id="main-menu">
-						<ul class="nav nav-justified ">
-							<li><a class="textcolor" style="color: black"
-									href="HomeSauDangNhap.jsp"><strong>Home</strong></a></li>							
-								<li><a class="textcolor" style="color: black"
-									href="TaiFile.jsp"><strong>Up Load</strong></a></li>
-									<li class="dropdown"><a style="color: black"
-									class="dropdown-toggle" data-toggle="dropdown" href="#">Tài Liệu<span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="UpLoad2.jsp">Cá Nhân</a></li>
-										<li><a href="fileshare.jsp">Được Chia Sẻ </a></li>
-									</ul>
-								<li class="dropdown"><a style="color: black"
-									class="dropdown-toggle" data-toggle="dropdown" href="#">Test<span
-										class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="Reading.jsp">Reading Test</a></li>
-										<li><a href="Listening.jsp">Listening Test</a></li>
-										<li><a href="Test.jsp">Full Test</a></li>
-									</ul>
-						</ul>
-					</div>
+					
 				</div>
 			</div>
 

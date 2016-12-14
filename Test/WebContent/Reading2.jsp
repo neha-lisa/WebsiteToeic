@@ -284,7 +284,7 @@ to {
 						<div class="navbar-collapse collapse" id="main-menu">
 							<ul class="nav nav-justified ">
 								<li><a class="textcolor" style="color: black"
-									href="HomeSauDangNhap.jsp"><strong>Home</strong></a></li>							
+									href="HomeSauDangNhap.jsp"><strong>Trang Chủ</strong></a></li>							
 								<li><a class="textcolor" style="color: black"
 									href="TaiFile.jsp"><strong>Up Load</strong></a></li>
 									<li class="dropdown"><a style="color: black"
@@ -293,14 +293,8 @@ to {
 										<li><a href="UpLoad2.jsp">Cá Nhân</a></li>
 										<li><a href="fileshare.jsp">Được Chia Sẻ </a></li>
 									</ul>
-								<li class="dropdown"><a style="color: black"
-									class="dropdown-toggle" data-toggle="dropdown" href="#">Test<span
-										class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="Reading.jsp">Reading Test</a></li>
-										<li><a href="Listening.jsp">Listening Test</a></li>
-										<li><a href="Test.jsp">Full Test</a></li>
-									</ul>
+								<li><a class="textcolor" style="color: black"
+									href="Test.jsp"><strong>Kiểm Tra</strong></a></li>
 							</ul>
 						</div>
 
@@ -377,14 +371,14 @@ to {
 					</p>
 					<form>
 						<p align="left">1.</p>
-						<input type="radio" name="gender" value="male" checked>A.
+						<input type="radio" name="gender" value="male" >A.
 						Remember<br> <input type="radio" name="gender" value="female">B.
 						Reminder<br> <input type="radio" name="gender" value="other">C.
 						Remind<br> <input type="radio" name="gender" value="other">D.
 						Reconcile<br>
 						<form>
 							<p align="left">2.</p>
-							<input type="radio" name="gender" value="male" checked>A.
+							<input type="radio" name="gender" value="male" >A.
 							Already<br> <input type="radio" name="gender" value="female">B.
 							Existing<br> <input type="radio" name="gender" value="other">C.
 							Essential<br> <input type="radio" name="gender"
@@ -393,7 +387,7 @@ to {
 						<br>
 						<form>
 							<p align="left">3.</p>
-							<input type="radio" name="gender" value="male" checked>A.
+							<input type="radio" name="gender" value="male" >A.
 							Surrender<br> <input type="radio" name="gender"
 								value="female">B. Enters<br> <input type="radio"
 								name="gender" value="other">C. Submit<br> <input
@@ -402,7 +396,7 @@ to {
 						<br>
 						<form>
 							<p align="left">4.</p>
-							<input type="radio" name="gender" value="male" checked>A.
+							<input type="radio" name="gender" value="male" >A.
 							Enjoy<br> <input type="radio" name="gender" value="female">B.
 							Celebrate<br> <input type="radio" name="gender"
 								value="other">C. Live<br> <input type="radio"
