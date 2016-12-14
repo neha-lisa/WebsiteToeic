@@ -189,7 +189,6 @@ body
 							                <tr>
 							                     <th>Full Name</th>
 							                     <th>Username</th>
-							                     <th>Password</th>
 							                     <th>Email</th>
 							                     <th>Mobile</th>
 							                     <th>Regdate</th>
@@ -212,7 +211,6 @@ body
 														<tr>
 															<td>${rows.fullname }</td>
 															<td>${rows.username }</td>
-															<td>${rows.password }</td>
 															<td>${rows.email }</td>
 															<td>${rows.mobile }</td>
 															<td>${rows.regdate }</td>
